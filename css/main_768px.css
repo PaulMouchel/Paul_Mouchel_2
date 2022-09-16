@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    /* -----------------Titre, recherche et filtres----------------------- */
+    .title {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* -------------------Hébergements---------------------- */
+    .accomodation-card{
+        width: 100%;
+    }
+
+    .accomodation-card--horizontal {
+        height: 150px;
+    }
+
+    .rating{
+        font-size: 12px;
+    }
+
+    .most-popular {
+        padding: 40px 20px;
+    }
+
+    /* ---------------------Activités-------------------- */
+    .activities__column {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .activity-card {
+        height: 200px;
+    }
+    
+    .activity-card--lg {
+        height: 200px;
+    }
+}

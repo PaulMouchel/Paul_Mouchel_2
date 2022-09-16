@@ -1,0 +1,337 @@
+main {
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 50px;
+}
+
+/* -----------------Titre, recherche et filtres----------------------- */
+.subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+form {
+    height: 67px;
+    border: solid 1px var(--gray);
+    width: 560px;
+    border-radius:20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    overflow: hidden;
+    
+}
+
+form .icon-container {
+    height: 100%;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray);
+}
+
+form i {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+form input {
+    height: 100%;
+    border: none;
+    width: 310px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+form input::placeholder {
+    color:#000;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form button {
+    height: 100%;
+    background: var(--blue);
+    color: #FFF;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    width: 180px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+form button.desktop {
+    display: block;
+}
+
+form button.mobile {
+    display: none;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.filter {
+    border-radius: 0 99px 99px 0;
+    border:solid 2px #ccc;
+    margin: 10px 10px 10px 45px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all .3s ease-out 100ms;
+}
+
+.filter:hover {
+    background-color: var(--blue);
+    color: #fff;
+    border-color: var(--blue);
+}
+
+.filter:hover .filter-icon-container{
+    background-color: var(--blue);
+    color: var(--light-blue);
+}
+    
+
+.filter-icon-container {
+    position:absolute;
+    left: -32px;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-blue);
+    border-radius: 50%;
+    color:var(--blue);
+    font-size: 25px;
+    transition: all .3s ease-out 100ms;
+}
+
+.filter-text {
+    font-size: 25px;
+    font-weight: 700;
+    height: 60px;
+    display: flex;
+    align-items: center ;
+    margin-right: 20px;
+}
+
+.filter-item-text {
+    font-size: 25px;
+    font-weight: 700;
+    height: 60px;
+    display: flex;
+    align-items: center ;
+    margin-right: 20px;
+    padding-left: 36px;
+    padding-right: 10px;
+}
+
+.fa-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:solid 2px var(--gray);
+    margin-right: 20px;
+    color: var(--blue);
+}
+
+/* -------------------Hébergements---------------------- */
+#accomodations {
+    display: flex;
+    justify-content: space-between;
+    margin-top:50px;
+    gap:20px;
+}
+
+.accomodations-marseille {
+    width: 65%;
+    background-color: var(--gray);
+    border-radius: 30px;
+    padding: 60px 20px;
+}
+
+.accomodations-marseille__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.accomodation-card{
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgb(221, 221, 221);
+    width: 30%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all .3s ease-out 100ms;
+}
+
+.accomodation-card:hover{
+    transform: scale(1.05);
+}
+
+.accomodation-card--horizontal {
+    flex-direction: row;
+    width: 100%;
+    height: 195px;
+}
+
+.accomodation-card__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    max-height: 150px;
+    margin-bottom: 10px;
+}
+
+.accomodation-card--horizontal .accomodation-card__image{
+    max-width: 35%;
+    border-radius: 15px 0 0 15px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    max-height: 200px;
+}
+
+.accomodation-card__image img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.accomodation-card__infos {
+    padding: 5px 10px;
+}
+
+.accomodation-card--horizontal .accomodation-card__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.accomodation-card h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.accomodation-card p{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.rating{
+    font-size: 14px;
+    color: var(--blue)
+}
+
+.gray {
+    color: var(--gray)
+}
+
+.display-more {
+    margin-top: 20px;
+}
+
+.most-popular {
+    width: 35%;
+    background-color: var(--gray);
+    border-radius: 30px;
+    padding: 60px 3%;
+}
+
+.most-popular .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.fa-chart-line {
+    font-size: 28px;
+}
+
+/* ---------------------Activités-------------------- */
+#activities {
+    margin-top: 80px;
+}
+
+.activities__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap:3vw;
+}
+
+.activities__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    width: 20%;
+    flex-grow: 1;
+    gap:3vw;
+    margin-bottom: 20px;
+}
+
+.activity-card {
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgb(221, 221, 221);
+    transition: all .3s ease-out 100ms;
+}
+
+.activity-card:hover{
+    transform: scale(1.05);
+}
+
+.activity-card--lg {
+    height: 150%;
+}
+
+.activity-card__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    flex-shrink: 1;
+}
+
+.activity-card__image img{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.activity-card h4 {
+    padding: 20px;
+}

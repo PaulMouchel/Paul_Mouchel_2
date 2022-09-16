@@ -1,0 +1,136 @@
+@media (max-width: 992px) {
+    main {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+
+    /* -----------------Titre, recherche et filtres----------------------- */
+    .title {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    form {
+        height: 55px;
+        width: 100%;
+        max-width: 500px;
+        justify-content: space-between;
+    }
+
+    form .icon-container {
+        width: 55px;
+        flex-shrink: 0;
+    }
+
+    form i {
+        font-size: large;
+    }
+
+    form input {
+        width: 210px;
+        font-size: 20px;
+    }
+
+    form button {
+        border-radius: 20px;
+        width: 55px;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form button.desktop {
+        display: none;
+    }
+    
+    form button.mobile {
+        display: flex;
+    }
+
+    .filters {
+        margin-top: 25px;
+    }
+
+    .filter-icon-container {
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+    }
+
+    .filter-text {
+        font-size: 20px;
+        height: 46px;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .filter-item-text {
+        font-size: 20px;
+        height: 46px;
+        padding-left: 20px;
+    }
+
+    /* -------------------Hébergements---------------------- */
+    #accomodations {
+        flex-direction: column-reverse;
+    }
+
+    .accomodations-marseille {
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    .accomodation-card{
+        width: 40%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .accomodation-card--horizontal {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .accomodation-card__image{
+        max-height: 120px;
+    }
+
+    .accomodation-card p{
+        font-size: 15px;
+    }
+
+    .most-popular {
+        width: 100%;
+        border-radius: 0px;
+        padding: 40px 40px;
+    }
+
+    /* ---------------------Activités-------------------- */
+    #activities {
+        margin-top: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .activities__list {
+        gap:25px;
+        flex-wrap: wrap;
+    }
+
+    .activities__column {
+        width: 40%;
+        gap:25px;
+        margin-bottom: 0px;
+    }
+}
